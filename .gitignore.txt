@@ -1,0 +1,32 @@
+# Riippuvuudet (Nämä ovat raskaita ja ladattavissa uudelleen)
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Lokitiedostot
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Ympäristömuuttujat (TÄRKEÄÄ: Älä lähetä salasanoja tai API-avaimia)
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Editorikohtaiset tiedostot (VS Code, JetBrains yms.)
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Käyttöjärjestelmän turhat tiedostot
+DS_Store
+Thumbs.db
