@@ -1,0 +1,175 @@
+{
+  "baseCostBySize": {
+    "XS": { "min": 40000, "max": 60000 },
+    "S": { "min": 65000, "max": 95000 },
+    "M": { "min": 100000, "max": 150000 },
+    "L": { "min": 160000, "max": 240000 },
+    "XL": { "min": 230000, "max": 340000 },
+    "XXL": { "min": 320000, "max": 480000 }
+  },
+  "etlMultipliers": {
+    "Wherescape": 0.78,
+    "TimeXtender": 0.93,
+    "SSIS": 1.0,
+    "Data Factory": 0.9,
+    "Other": 1.18
+  },
+  "targetMultipliers": {
+    "Microsoft Fabric": 0.82,
+    "Databricks": 0.92,
+    "Snowflake": 1.2,
+    "Other": 1.1
+  },
+  "featureMultipliers": {
+    "usePinjaFabricStandard": 0.82,
+    "usesDataVault": 0.9,
+    "wherescapeWithFabric": 0.87
+  },
+  "partnershipDeductions": {
+    "Microsoft partnership support": {
+      "type": "percent",
+      "value": 0.09,
+      "label": "Microsoft sponsorship can offset selected Fabric infrastructure costs during migration onboarding."
+    },
+    "Databricks partnership support": {
+      "type": "percent",
+      "value": 0.07,
+      "label": "Databricks sponsorship can reduce eligible platform and acceleration package costs."
+    }
+  },
+  "savingsBands": {
+    "best": "Save 85-95% vs. traditional migration with the Pinja Migration Agent",
+    "high": "Save 78-90% vs. traditional migration with the Pinja Migration Agent",
+    "medium": "Save 70-84% vs. traditional migration with the Pinja Migration Agent",
+    "base": "Save 60-75% vs. traditional migration with the Pinja Migration Agent"
+  },
+  "timeline": {
+    "Assessment": { "baseWeeks": 2 },
+    "Architecture Mapping": { "baseWeeks": 3 },
+    "Migration": { "baseWeeks": 8 },
+    "Testing": { "baseWeeks": 3 },
+    "Go-Live": { "baseWeeks": 1 },
+    "Automated SQL Extraction": { "baseWeeks": 2 },
+    "Data Vault 2.0 Mapping": { "baseWeeks": 3 },
+    "Pinja Standard Deployment": { "baseWeeks": 2 }
+  },
+  "sizeWeekModifiers": {
+    "XS": 0.7,
+    "S": 0.85,
+    "M": 1,
+    "L": 1.2,
+    "XL": 1.4,
+    "XXL": 1.7
+  },
+  "prosCons": {
+    "default": {
+      "migrationPros": [
+        "Configuration-based roadmap gives immediate project structure.",
+        "Pinja Migration Agent can automate repetitive migration tasks."
+      ],
+      "migrationCons": [
+        "Legacy source complexity can require manual transformation review."
+      ],
+      "pinjaAdvantages": [
+        "Prebuilt migration accelerators reduce discovery and setup effort.",
+        "Strong Fabric and Databricks delivery playbooks from prior projects."
+      ]
+    },
+    "Wherescape|Microsoft Fabric": {
+      "migrationPros": [
+        "Native Wherescape SQL extraction can accelerate translation planning.",
+        "Fabric landing architecture is optimized for Lakehouse migration patterns."
+      ],
+      "migrationCons": [
+        "Data quality rules still require business validation before cutover."
+      ],
+      "pinjaAdvantages": [
+        "Pinja Wherescape SQL Extractor reduces manual code inventory work.",
+        "Pinja Fabric Standard enables rapid and repeatable project kickoff."
+      ]
+    },
+    "Other|Snowflake": {
+      "migrationPros": [
+        "Snowflake provides flexible scale for mixed analytics workloads."
+      ],
+      "migrationCons": [
+        "Unknown ETL patterns increase reverse-engineering effort.",
+        "Higher migration overhead due to custom mapping and tooling alignment."
+      ],
+      "pinjaAdvantages": [
+        "Pinja Migration Agent still reduces repetitive refactoring effort.",
+        "Pinja architects can define phased migration to control delivery risk."
+      ]
+    },
+    "TimeXtender|Databricks": {
+      "migrationPros": [
+        "Databricks supports high-scale processing and advanced workloads.",
+        "TimeXtender metadata can support faster source understanding."
+      ],
+      "migrationCons": [
+        "Platform onboarding and workload tuning can increase early effort."
+      ],
+      "pinjaAdvantages": [
+        "Pinja can package Databricks migration with structured best-practice templates.",
+        "Partnership-driven co-funding opportunities can reduce total project cost."
+      ]
+    }
+  },
+  "whatYouGet": [
+    {
+      "id": "ai-ready",
+      "icon": "brain",
+      "title": "AI-ready data platform",
+      "subtitle": "Build your competitive edge on a modern foundation",
+      "points": [
+        "AI-native architecture—no legacy constraints hold you back",
+        "Git-integrated version control for data transformations",
+        "Pre-tailored AI agents ready to accelerate your workflows"
+      ]
+    },
+    {
+      "id": "best-practices",
+      "icon": "trophy",
+      "title": "Best practices for modern data work",
+      "subtitle": "Benefit from Pinja's proven expertise",
+      "points": [
+        "Drawn from multi-industry, large-scale migration experience",
+        "Patterns tested and refined across 100+ successful Fabric and Databricks deployments",
+        "Your team learns enterprise-grade data engineering from day one"
+      ]
+    },
+    {
+      "id": "turnkey",
+      "icon": "graduation",
+      "title": "Turnkey project with dedicated support",
+      "subtitle": "Success built in from kickoff to go-live",
+      "points": [
+        "Your team runs the show independently after migration—full operational handoff",
+        "Comprehensive training in Git workflows, platform operations, and AI-powered data work",
+        "Pinja support remains available for critical issues during your first 90 days"
+      ]
+    },
+    {
+      "id": "proven-patterns",
+      "icon": "checkmark",
+      "title": "Built on battle-tested patterns",
+      "subtitle": "Confidence through proven design",
+      "points": [
+        "Migration blueprints validated across 1000+ data scenarios",
+        "Risk mitigation built in—automated testing catches issues early",
+        "Repeatable governance model scales with your organization"
+      ]
+    },
+    {
+      "id": "accelerated-tov",
+      "icon": "lightning",
+      "title": "40–50% faster time-to-value",
+      "subtitle": "Operational excellence from day one",
+      "points": [
+        "Deliver faster than traditional migration—weeks, not months",
+        "Lower operational overhead through intelligent automation",
+        "Begin extracting value weeks ahead of traditional approaches"
+      ]
+    }
+  ]
+}
